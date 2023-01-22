@@ -1,0 +1,20 @@
+{
+  "name": "lagg.bot",
+  "version": "1.1.0",
+  "description": "IM Lagg bot",
+  "main": "init.js",
+  "dependencies": {
+    "request": "^2.88.0",
+    "steam-totp": "^2.1.1",
+    "steam-tradeoffer-manager": "^2.9.3",
+    "steam-user": "^4.19.3",
+    "steamcommunity": "^3.36.1",
+    "steamstore": "^2.2.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anthony Garcia <anthony@lagg.me>",
+  "license": "SEE LICENSE IN LICENSE",
+  "private": true
+}

@@ -1,0 +1,24 @@
+{
+    "dataDir": "data",
+    "logDir": "logs",
+    "logLevel": "info",
+    "proxies": [
+        "http://some.proxy:1234"
+    ],
+    "bindAddrs": [
+        "255.255.255.255"
+    ],
+    "bots": [
+        {
+            "username": "foobarbazbot",
+            "password": "goodpassword"
+        }
+    ],
+    "ajax": {
+        "host": "0.0.0.0",
+        "port": 5244,
+        "sslCert": "<cert path or null for plain http>",
+        "sslKey": "<cert key or null for plain http>",
+        "enabled": false
+    }
+}
