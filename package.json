@@ -16,5 +16,9 @@
   },
   "author": "Anthony Garcia <anthony@lagg.me>",
   "license": "SEE LICENSE IN LICENSE",
-  "private": true
+  "private": true,
+  "optionalDependencies": {
+    "globaloffensive": "^3.0.0",
+    "tf2": "^4.0.0"
+  }
 }
