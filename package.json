@@ -4,12 +4,12 @@
   "description": "IM Lagg bot",
   "main": "init.js",
   "dependencies": {
-    "request": "^2.88.0",
-    "steam-totp": "^2.1.1",
-    "steam-tradeoffer-manager": "^2.9.3",
+    "request": "^2.88.2",
+    "steam-totp": "^2.1.2",
+    "steam-tradeoffer-manager": "^2.10.6",
     "steam-user": "^5.0.2",
-    "steamcommunity": "^3.36.1",
-    "steamstore": "^2.2.1"
+    "steamcommunity": "^3.47.1",
+    "steamstore": "^2.3.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
