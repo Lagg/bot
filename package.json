@@ -7,7 +7,7 @@
     "request": "^2.88.0",
     "steam-totp": "^2.1.1",
     "steam-tradeoffer-manager": "^2.9.3",
-    "steam-user": "^4.19.3",
+    "steam-user": "^5.0.2",
     "steamcommunity": "^3.36.1",
     "steamstore": "^2.2.1"
   },
