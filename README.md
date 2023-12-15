@@ -31,19 +31,20 @@ A config filename can be passed via the command line with `--conf <filename>`. D
 See config.json.example for a basic configuration file enabling the bots and the json API.
 If no config file is readable the bot manager will start using the minimum runtime defaults.
 
+* `appId`: Default app ID. Used when app IDs are otherwise not given for something. Trying to figure out how to make this redundant.
 * `dataDir`: Where to find sentry and 2fa files. Defaults to `data`.
   * Ensure your sentry and 2fa payload files match the format of `<username>.sentry` and `<username>.2fa.json` respectively.
 * `logDir`: Where to write log files if desired. Defaults to disabled.
 * `logLevel`: Log filter level, `info` for production is recommended. Defaults to `debug`.
-* `proxies`: A list of HTTP proxy URLs to use when possible. Each proxy in the list will be rotated as bots are initialized.
-* `bindAddrs`: A list of local interface addresses to bind to if desired. Addresses are rotated similarly to proxies.
-* `bots`: A list of `username`s and `password`s to log in to bots with. Optionally supports runtime `personaName`. `dataDir` should contain a sentry and 2fa payload for each username.
 * `ajax`: Ajax API opts
-  * `enabled`: Whether or not to start the API.
   * `host`: Host to bind JSON API listener to. Defaults to `localhost`. Secure proxy like nginx or ssl recommended for exposing to WAN.
   * `port`: JSON API port. Defaults to `5244`.
   * `sslCert`: Path to SSL cert to use for the listener. If null, plain HTTP assumed.
   * `sslKey`: Path to SSL key for the cert. If null, plain HTTP assumed.
+  * `enabled`: Whether or not to start the API.
+* `proxies`: A list of HTTP proxy URLs to use when possible. Each proxy in the list will be rotated as bots are initialized.
+* `bindAddrs`: A list of local interface addresses to bind to if desired. Addresses are rotated similarly to proxies.
+* `bots`: A list of `username`s and `password`s to log in to bots with. Optionally supports runtime `personaName`. `dataDir` should contain a sentry and 2fa payload for each username.
 
 # Command reference
 

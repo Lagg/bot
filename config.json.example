@@ -1,7 +1,15 @@
 {
+    "appId": 730,
     "dataDir": "data",
     "logDir": "logs",
     "logLevel": "info",
+    "ajax": {
+        "host": "127.0.0.1",
+        "port": 5244,
+        "sslCert": "<cert path or null for plain http>",
+        "sslKey": "<cert key or null for plain http>",
+        "enabled": false
+    },
     "proxies": [
         "http://some.proxy:1234"
     ],
@@ -11,14 +19,8 @@
     "bots": [
         {
             "username": "foobarbazbot",
-            "password": "goodpassword"
+            "password": "goodpassword",
+            "personaName": "Bot 42"
         }
-    ],
-    "ajax": {
-        "host": "0.0.0.0",
-        "port": 5244,
-        "sslCert": "<cert path or null for plain http>",
-        "sslKey": "<cert key or null for plain http>",
-        "enabled": false
-    }
+    ]
 }
