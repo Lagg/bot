@@ -1,0 +1,13 @@
+#!/bin/sh
+
+log_expiry_days=60
+log_directory=$(echo $*|sed "s/\/\+$//")
+archive_name="$log_directory/archive-$(date +%F).zip"
+archive_cmd="7z a $archive_name"
+
+if test -z $log_directory; then
+    echo "Log dir required"
+    exit
+else
+    find $log_directory -name "*.log" -mtime +$log_expiry_days -exec $archive_cmd {} + -exec rm {} +
+fi
