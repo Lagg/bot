@@ -44,7 +44,7 @@ If no config file is readable the bot manager will start using the minimum runti
   * `enabled`: Whether or not to start the API.
 * `proxies`: A list of HTTP proxy URLs to use when possible. Each proxy in the list will be rotated as bots are initialized.
 * `bindAddrs`: A list of local interface addresses to bind to if desired. Addresses are rotated similarly to proxies.
-* `bots`: A list of `username`s and `password`s to log in to bots with. Optionally supports runtime `personaName`. `dataDir` should contain a sentry and 2fa payload for each username.
+* `bots`: A list of `username`s and `password`s to log in to bots with. Optionally supports per-bot `personaName`, `bindAddr` and `proxy`. `dataDir` should contain a sentry and 2fa payload for each username.
 
 # Command reference
 
