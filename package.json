@@ -8,7 +8,7 @@
     "steam-totp": "^2.1.2",
     "steam-tradeoffer-manager": "^2.10.6",
     "steam-user": "^5.0.8",
-    "steamcommunity": "^3.47.1",
+    "steamcommunity": "^3.48.2",
     "steamstore": "^2.3.0"
   },
   "scripts": {
@@ -18,7 +18,7 @@
   "license": "SEE LICENSE IN LICENSE",
   "private": true,
   "optionalDependencies": {
-    "globaloffensive": "^3.0.0",
+    "globaloffensive": "^3.1.0",
     "tf2": "^4.0.0"
   }
 }
